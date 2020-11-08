@@ -83,7 +83,7 @@
         <hr>
 
         <p>Next step is to start thinking of how to start dealing with this whole ‘soldier’ concept. 
-          At the very least, here’s some design requirements for the Follower Controller. Italicized are future things ofc.        </p>
+          At the very least, here’s some design requirements for the Follower Controller. </p>
 
           <ul>
             <li>Be a singleton so it and the soldiers are easily accessible. There’s always one and only the player will use it.</li>
@@ -91,6 +91,7 @@
 <li>Needs to store an array of Vector3 which can be defined as a soldier instance’s ‘position’ in its formation. </li>
 <li>Needs to use mouse commands to move and rotate this array of Vector3s. (Vector maths augh!)</li>
 <li>Needs to store a list of GameObjects which implement Follower class (Which itself will store each follower instance’s health, position in formation etc.) and CharacterController component for Move function.</li>
+
 <li>Use navmeshes at some point, but keep it simple for prototyping.</li>
 <li>Implement some finite state machine for rotating, marching, charging, fighting, fleeing. Some inspiration from Total War series. </li>
 <li>Models, animations, injuries, different abilities, different kinds of followers (Archers/soldiers/shields etc)</li>
